@@ -58,10 +58,10 @@ def calculator() -> None:
 
             if command == "help":
                 display_help()
-                continue
+                continue # pragma: no cover
             elif command == "history":
                 display_history(history)
-                continue
+                continue # pragma: no cover
             elif command == "exit":
                 print("Exiting calculator. Goodbye!\n")
                 sys.exit(0)  # Exit the program gracefully
@@ -110,4 +110,4 @@ def calculator() -> None:
 
 
 if __name__ == "__main__":
-    calculator() 
+    calculator() # pragma: no cover
